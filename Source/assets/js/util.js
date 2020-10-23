@@ -1,4 +1,4 @@
-// Utility function don't touch
+// Utility function
 function Util () {};
 
 /* 
@@ -68,7 +68,7 @@ Util.setHeight = function(start, to, element, duration, cb) {
     }
   };
   
-  //set the height of the element before starting animation 
+  //set the height of the element before starting animation -> fix bug on Safari
   element.setAttribute("style", "height:"+start+"px;");
   window.requestAnimationFrame(animateHeight);
 };

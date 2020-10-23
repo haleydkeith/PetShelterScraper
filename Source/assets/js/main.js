@@ -1,9 +1,9 @@
 (function() {
-	  var HorizontalTimeline = function(element) {
+  var HorizontalTimeline = function(element) {
 		this.element = element;
 		this.datesContainer = this.element.getElementsByClassName('cd-h-timeline__dates')[0];
 		this.line = this.datesContainer.getElementsByClassName('cd-h-timeline__line')[0]; // grey line in the top timeline section
-		this.fillingLine = this.datesContainer.getElementsByClassName('cd-h-timeline__filling-line')[0]; // blue filling line in the top timeline section  
+		this.fillingLine = this.datesContainer.getElementsByClassName('cd-h-timeline__filling-line')[0]; //  blue filling line in the top timeline section  
 		this.date = this.line.getElementsByClassName('cd-h-timeline__date');
 		this.selectedDate = this.line.getElementsByClassName('cd-h-timeline__date--selected')[0];
 		this.dateValues = parseDate(this);
@@ -110,7 +110,7 @@
 		(timeline.translate == containerWidth - timeline.lineLength ) ? Util.addClass(timeline.navigation[1], 'cd-h-timeline__navigation--inactive') : Util.removeClass(timeline.navigation[1], 'cd-h-timeline__navigation--inactive');
   };
 
-	function selectNewDate(timeline, target) { // new date has been selected -> update timeline
+	function selectNewDate(timeline, target) { // ned date has been selected -> update timeline
 		timeline.newDateIndex = Util.getIndexInArray(timeline.date, target);
 		timeline.oldDateIndex = Util.getIndexInArray(timeline.date, timeline.selectedDate);
 		Util.removeClass(timeline.selectedDate, 'cd-h-timeline__date--selected');

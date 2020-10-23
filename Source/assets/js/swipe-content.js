@@ -1,5 +1,4 @@
 (function() {
-	// Swipe Content Plugin - by CodyHouse.co
 	var SwipeContent = function(element) {
 		this.element = element;
 		this.delta = [false, false];
