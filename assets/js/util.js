@@ -1,5 +1,4 @@
 // Utility function don't touch
-
 function Util () {};
 Util.hasClass = function(el, className) {
 	if (el.classList) return el.classList.contains(className);
